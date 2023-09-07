@@ -5,13 +5,9 @@
             <button data-modal-target="defaultModalClasse" data-modal-toggle="defaultModalClasse" class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                 Agregar Classe
             </button>
-
-            <!-- Main modal -->
             <div id="defaultModalClasse" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                 <div class="relative w-full max-w-2xl max-h-full">
-                    <!-- Modal content -->
                     <div class=" bg-white rounded-md shadow flex flex-col">
-                        <!-- Modal header -->
                         <div class="flex items-start justify-between p-4 border-b rounded-t ">
                             <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
                                 Agregar Clase
@@ -23,7 +19,6 @@
                                 <span class="sr-only">Close modal</span>
                             </button>
                         </div>
-                        <!-- Modal body -->
                         <div class="p-6 space-y-6 flex flex-col">
                             <b class="text-base  text-black">
                                 Nombre de la materia
@@ -44,7 +39,6 @@
 
                                 ?>
                             </select>
-                            <!-- Modal footer -->
                             <div class="  flex w-full items-center justify-end pt-4 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                 <button data-modal-hide="defaultModalClasse" type="button" class="text-white bg-gray-700 hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300
                                         rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5
@@ -101,7 +95,6 @@
                         $nombreCompleto = "<b class=' bg-yellow-300 text-black px-2 py-1 rounded-md'>Sin Asignacion</b>";
                     }
 
-
                     $resultInfoClasses3 = $mysqli->query("SELECT * FROM info_classes WHERE id_class_fk = '$idClasse'");
 
                     $totalRows = $resultInfoClasses3->num_rows;
@@ -113,8 +106,6 @@
                         <td class='truncate'>$nombreCompleto</td>
                         <td>$totalRows</td>
                         <td class='flex justify-around'>"; ?>
-
-                    <!-- Modal toggle -->
                     <form class="h-fit" method="post" action="./hallEditClasses.php">
                         <!-- <input class="hidden" name="iValue" value="$i" /> -->
                         <button data-modal-target="<?php print_r($k . "Modales"); ?>" data-modal-toggle="<?php print_r($k . "Modales"); ?>" type="button" class=" rounded-sm shadow hover:shadow-md hover:bg-green-100">
@@ -123,13 +114,9 @@
                             </svg>
 
                         </button>
-
-                        <!-- Main modal -->
                         <div id="<?php print_r($k . "Modales"); ?>" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                             <div class="relative w-full max-w-2xl max-h-full">
-                                <!-- Modal content -->
                                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                    <!-- Modal header -->
                                     <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                                         <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
                                             Editar Classe
@@ -141,7 +128,6 @@
                                             <span class="sr-only">Close modal</span>
                                         </button>
                                     </div>
-                                    <!-- Modal body -->
                                     <div class="p-6 space-y-6 flex flex-col">
                                         <input class="rounded-lg hidden" type="text" name="idDelInfo4Classe" value="<?php print_r($id4Info); ?>" />
                                         <input class="rounded-lg hidden" type="text" name="idDelClasse" value="<?php print_r($idClasse); ?>" />
@@ -173,8 +159,6 @@
                                             }
                                             ?>
                                         </select>
-                                        <!-- Modal footer -->
-
                                         <div class="  flex w-full items-center justify-end pt-4 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                             <button data-modal-hide="<?php print_r($k . "Modales"); ?>" type="button" class="text-white bg-gray-700 hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300
                                         rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5

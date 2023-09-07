@@ -7,7 +7,6 @@ $idDelClasse = $_POST["idDelClasse"];
 $editClaseNombre = $_POST["editClaseNombre"];
 $editProfeClaseAsign = $_POST["editProfeClaseAsign"];
 
-
 // print_r($idDelClasse . " " . $editClaseNombre . " " . $editProfeClaseAsign . " " . $idDelInfo4Classe);
 
 $insertInfoMaestros01 = $mysqli->query("UPDATE classes SET name_class = '$editClaseNombre' WHERE id_class = '$idDelClasse'");

@@ -54,7 +54,6 @@
                     }
                     echo '</td>
                         <td>'; ?>
-                    <!-- Modal toggle -->
 
                     <form class="h-fit" method="post" action="./hallPermisos.php">
                         <!-- <input class="hidden" name="iValue" value="$i" /> -->
@@ -65,12 +64,9 @@
 
                         </button>
 
-                        <!-- Main modal -->
                         <div id="<?php print_r($emailAll); ?>" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                             <div class="relative w-full max-w-2xl max-h-full">
-                                <!-- Modal content -->
                                 <div class=" bg-white rounded-md shadow flex flex-col">
-                                    <!-- Modal header -->
                                     <div class="flex items-start justify-between p-4 border-b rounded-t ">
                                         <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
                                             Editar Permiso
@@ -82,7 +78,6 @@
                                             <span class="sr-only">Close modal</span>
                                         </button>
                                     </div>
-                                    <!-- Modal body -->
                                     <div class="p-6 space-y-6 flex flex-col">
                                         <b class="text-base  text-black">
                                             Email de Usuario

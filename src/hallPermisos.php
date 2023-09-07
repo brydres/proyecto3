@@ -14,7 +14,6 @@ if ($_POST["permisoCheckbox"] == 1) {
 // print_r($inputIdS . " " . $inputEmailS . " " . $permisoSelect . " " . $permisoEstado);
 $updatePermisos = $mysqli->query("UPDATE info SET email= '$inputEmailS',id_rol = '$permisoSelect',state = '$permisoEstado' WHERE id_info = '$inputIdS'");
 
-
 // print_r($_POST["permisoCheckbox"]);
 header("Location:./lobby.php");
 die();

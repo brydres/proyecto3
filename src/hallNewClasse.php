@@ -6,7 +6,6 @@ require("connection.php");
 $newClaseNombre = $_POST["newClaseNombre"];
 $profeClaseAsign = $_POST["profeClaseAsign"];
 
-
 // print_r($newClaseNombre . " " . $profeClaseAsign );
 $insertNewClase = $mysqli->query("INSERT INTO classes (name_class) VALUES ('$newClaseNombre')");
 

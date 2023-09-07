@@ -1,12 +1,10 @@
 <card class=" w-full md:h-full h-[350px] bg-white border md:overflow-y-scroll md:overflow-x-hidden overflow-scroll">
     <div class="w-full h-fit border-b md:p-3 p-2 flex items-center justify-between">
         <p class="md:text-base text-xs">Alumnos de su Clase</p>
-
     </div>
 
     <div class="relative md:p-4 p-2 pt-0">
         <table id="tablaAlumnos4Profe" class="display  border md:text-base text-xs">
-
             <thead>
                 <tr>
                     <th>#</th>
@@ -50,24 +48,16 @@
                         }
                         echo "</td>
                             <td class='flex justify-around'>"; ?>
-
-                        <!-- Modal toggle -->
                         <form class="h-fit" method="post" action="./hallAnhadirCali.php">
                             <!-- <input class="hidden" name="iValue" value="$i" /> -->
                             <button data-modal-target="<?php print_r($l . "Modaless"); ?>" data-modal-toggle="<?php print_r($l . "Modaless"); ?>" type="button" class=" rounded-sm shadow hover:shadow-md hover:bg-blue-100">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#007bfe" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                 </svg>
-
-
                             </button>
-
-                            <!-- Main modal -->
                             <div id="<?php print_r($l . "Modaless"); ?>" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                                 <div class="relative w-full max-w-xl max-h-full">
-                                    <!-- Modal content -->
                                     <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                        <!-- Modal header -->
                                         <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                                             <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
                                                 Añadir Calificación
@@ -79,7 +69,6 @@
                                                 <span class="sr-only">Close modal</span>
                                             </button>
                                         </div>
-                                        <!-- Modal body -->
                                         <div class="p-6 space-y-6 flex flex-col">
                                             <input class="rounded-lg hidden" type="text" name="idnombreCali" value="<?php print_r($id_info_fk4P); ?>" />
                                             <input class="rounded-lg hidden" type="text" name="idnombreClassCali" value="<?php print_r($idTeacherClass); ?>" />
@@ -87,8 +76,6 @@
                                                 Ingrese la Calificacion del 0 a 100
                                             </b>
                                             <input class="rounded-lg" type="number" min="0" max="100" name="editCalificacion" value="<?php print_r($grade4P); ?>" required />
-
-                                            <!-- Modal footer -->
 
                                             <div class="  flex w-full items-center justify-end pt-4 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                                 <button data-modal-hide="<?php print_r($l . "Modaless"); ?>" type="button" class="text-white bg-gray-700 hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300
@@ -118,12 +105,9 @@
 
                             </button>
 
-                            <!-- Main modal -->
                             <div id="<?php print_r($l . "Modalessx"); ?>" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                                 <div class="relative w-full max-w-xl max-h-full">
-                                    <!-- Modal content -->
                                     <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                        <!-- Modal header -->
                                         <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                                             <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
                                                 Añadir Mensaje
@@ -135,7 +119,6 @@
                                                 <span class="sr-only">Close modal</span>
                                             </button>
                                         </div>
-                                        <!-- Modal body -->
                                         <div class="p-6 space-y-6 flex flex-col">
                                             <input class="rounded-lg hidden" type="text" name="idnombreMensa" value="<?php print_r($id_info_fk4P); ?>" />
                                             <input class="rounded-lg hidden" type="text" name="idnombreClassMensa" value="<?php print_r($idTeacherClass); ?>" />
@@ -143,8 +126,6 @@
                                                 Ingrese un mesaje:
                                             </b>
                                             <input class="rounded-lg" type="text" name="editMensaje" value="<?php print_r($messages4P); ?>" required />
-
-                                            <!-- Modal footer -->
 
                                             <div class="  flex w-full items-center justify-end pt-4 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                                 <button data-modal-hide="<?php print_r($l . "Modalessx"); ?>" type="button" class="text-white bg-gray-700 hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300

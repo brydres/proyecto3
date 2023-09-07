@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $_SESSION["apellido"] = $lastName;
     header("Location:./lobby.php");
 } else {
-    //si NO es POST inicia secion con id
+
     $_SESSION["edit_error"] = "Erro al enviar datos.";
     header("Location:../index.php");
     die();

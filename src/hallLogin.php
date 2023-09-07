@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $datosEntry = $veryficationEntry->fetch_assoc();
     // var_dump($datosEntry["state"]);
     if ($datosEntry["state"] == 1) {
-        //si es POST inicia secion con email y pass
+
         $_SESSION["email_Lg"] = $_POST["emailLg"];
         $_SESSION["pass_Lg"] = $_POST["passLg"];
 

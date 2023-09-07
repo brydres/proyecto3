@@ -7,14 +7,10 @@
                 type="button">
                 Agregar Maestro
             </button>
-
-            <!-- Main modal -->
             <div id="defaultModalMaestro" tabindex="-1" aria-hidden="true"
                 class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                 <div class="relative w-full max-w-2xl max-h-full">
-                    <!-- Modal content -->
                     <div class=" bg-white rounded-md shadow flex flex-col">
-                        <!-- Modal header -->
                         <div class="flex items-start justify-between p-4 border-b rounded-t ">
                             <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
                                 Agregar Maestro
@@ -30,7 +26,6 @@
                                 <span class="sr-only">Close modal</span>
                             </button>
                         </div>
-                        <!-- Modal body -->
                         <div class="p-6 space-y-6 flex flex-col">
                             <b class="text-base  text-black">
                                 Correo Electronico
@@ -73,9 +68,6 @@
                                     ?>
                                 </select>
                             </div>
-
-
-                            <!-- Modal footer -->
                             <div
                                 class="  flex w-full items-center justify-end pt-4 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                 <button data-modal-hide="defaultModalMaestro" type="button" class="text-white bg-gray-700 hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300
@@ -149,7 +141,6 @@
                     }
                     echo "</td>
                         <td class='flex justify-around'>"; ?>
-                <!-- Modal toggle -->
                 <form class="h-fit" method="post" action="./hallEditMaestros.php">
                     <!-- <input class="hidden" name="iValue" value="$i" /> -->
                     <button data-modal-target="<?php print_r($i . "Modal"); ?>"
@@ -160,16 +151,11 @@
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                         </svg>
-
                     </button>
-
-                    <!-- Main modal -->
                     <div id="<?php print_r($i . "Modal"); ?>" tabindex="-1" aria-hidden="true"
                         class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
                         <div class="relative w-full max-w-2xl max-h-full">
-                            <!-- Modal content -->
                             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                                <!-- Modal header -->
                                 <div
                                     class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                                     <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
@@ -186,7 +172,6 @@
                                         <span class="sr-only">Close modal</span>
                                     </button>
                                 </div>
-                                <!-- Modal body -->
                                 <div class="p-6 space-y-6 flex flex-col">
                                     <input class="rounded-lg hidden" type="text" name="idDelMaestro"
                                         value="<?php print_r($idMaestro); ?>" />
@@ -237,8 +222,6 @@
                                                 ?>
                                         </select>
                                     </div>
-                                    <!-- Modal footer -->
-
                                     <div
                                         class="  flex w-full items-center justify-end pt-4 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                                         <button data-modal-hide="<?php print_r($i . "Modal"); ?>" type="button" class="text-white bg-gray-700 hover:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-blue-300

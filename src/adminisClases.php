@@ -26,7 +26,6 @@
                     $datosClass = $resultClasses->fetch_assoc();
                     $nameClass = $datosClass['name_class'];
 
-
                     echo "
                         <tr class='border'>
                             
