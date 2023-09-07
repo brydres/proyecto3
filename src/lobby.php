@@ -5,7 +5,6 @@ if ($_SESSION) {
 ?>
     <!DOCTYPE html>
     <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,6 @@ if ($_SESSION) {
         </script>
         <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
     </head>
-
     <body>
         <div class="bg-[#f1f3f5] h-screen w-screen flex">
             <section id="toggleMenu" class="h-full w-1/6 bg-[#30363b]">
