@@ -92,7 +92,7 @@
                         $nombreCompleto = $datosInfoClasses2["name"] . $datosInfoClasses2["lastname"];
                         $id4Info = $datosInfoClasses2["id_info"];
                     } else {
-                        $nombreCompleto = "<b class=' bg-yellow-300 text-black px-2 py-1 rounded-md'>Sin Asignacion</b>";
+                        $nombreCompleto = "<b class=' bg-yellow-300 text-black px-2 py-1 rounded-md'>Sin Asignar</b>";
                     }
 
                     $resultInfoClasses3 = $mysqli->query("SELECT * FROM info_classes WHERE id_class_fk = '$idClasse'");
